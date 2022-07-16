@@ -1,0 +1,26 @@
+--O------PYTHON------O--
+
+import random # Importa random
+bot = (random.choice(["pi", "pa", "ti"]))  # el  bot escoje aleatorioamente pi pa o ti
+print(bot) # esto es prueba borrar
+
+print("Porfavor ingresa pi si quieres pieda pa si quieres papel y ti si quieres tijeras")  # Explicacion
+
+Res = input("") # Pide la informacion de pi pa o ti
+
+oponente = bot # aclarar
+usuario = Res # aclarar
+
+
+if bot == Res: # pregunta que pasa si bot es igual a Res
+  print("Empate") # imprime
+       
+if((bot == 'pi' and Res == 'ti' ) # Explica las reglas a el bot
+     or (bot == 'ti' and Res == 'pa' ) 
+     or (bot == 'pa' and Res == 'pi' )):
+       print("perdiste") # le dice si gano o perdio al jugador
+       
+if((bot == 'pa' and Res == 'ti' ) # lo mismo
+     or (bot == 'pi' and Res == 'pa' ) 
+     or (bot == 'ti' and Res == 'pi' )):
+  print("Ganaste") # esta vez gana el jugador
