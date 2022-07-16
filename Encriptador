@@ -1,0 +1,27 @@
+print("Ingresa tu incriptador")
+eleccion = input("")
+caracter_elegido = eleccion
+
+def encriptar(frase, caracter):
+  encriptada = ""
+  for letra in frase:
+    if letra.lower() in "aeiuo":
+      if letra.isupper():
+        encriptada = encriptada + caracter.upper()
+      else:
+          encriptada = encriptada + caracter
+    else:
+      encriptada = encriptada + letra
+  return encriptada
+
+while True:
+  print(encriptar(input("ingresa una frase:\n>"), 
+caracter_elegido))
+
+  print("Ingresa (1) para encriptar otra frase")
+  print("Ingresa (2) para finalizar")
+  opcion = input(">")
+  if opcion == "2":
+    break
+  if opcion == "1":
+    print("------O-------")
